@@ -95,7 +95,7 @@ let merge = function(nums1, m, nums2, n) {
       // console.log('temp length: ', temp.length, temp);
       // console.log('nums1 length: ', nums1.length, nums1);      
 
-      if (m - n > 0 && m >= nums1.length) {
+      if (m >= nums1.length) {
         // console.log('temp length: ', temp.length);
         // console.log('nums length: ', nums1.length);
         let diff = m - n;
