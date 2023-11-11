@@ -5,22 +5,28 @@
  */
 const arrayStringsAreEqual = function(word1, word2) {
 
-  const iterate = (word) => {
-    let str = '';
+  word1 = word1.join('')
+  word2 = word2.join('')
 
-    for (let i = 0; i < word.length; i++) {
-      str += word[i]
-    }
+  // const iterate = (word) => {
+  //   let str = '';
 
-    return str;
-  }
+  //   for (let i = 0; i < word.length; i++) {
+  //     str += word[i]
+  //   }
 
-  const firstWord = iterate(word1);
-  const secondWord = iterate(word2);
+  //   return str;
+  // }
 
-  if (firstWord === secondWord) {
-    return true
-  }
+  // const firstWord = iterate(word1);
+  // const secondWord = iterate(word2);
 
-  return false
+  // if (firstWord === secondWord) {
+  //   return true
+  // }
+
+  // return false
+
+  return word1 === word2 ? true : false
+
 };
