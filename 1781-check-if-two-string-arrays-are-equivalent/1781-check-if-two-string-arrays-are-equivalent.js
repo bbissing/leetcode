@@ -4,7 +4,6 @@
  * @return {boolean}
  */
 const arrayStringsAreEqual = function(word1, word2) {
-  const words = [];
 
   const iterate = (word) => {
     let str = '';
@@ -13,13 +12,13 @@ const arrayStringsAreEqual = function(word1, word2) {
       str += word[i]
     }
 
-    words.push(str);
+    return str;
   }
 
-  iterate(word1);
-  iterate(word2);
+  const firstWord = iterate(word1);
+  const secondWord = iterate(word2);
 
-  if (words[0] === words[1]) {
+  if (firstWord === secondWord) {
     return true
   }
 
